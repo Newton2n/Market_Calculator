@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/output.css">
+    <title>Market handler</title>
+</head>
+
+<body class="flex justify-center w-full bg-[#4ED7F1]">
+    <!-- main container -->
+    <div class="main w-full flex flex-col justify-center items-center">
+        <p class="text-3xl mt-4 font-poppins ml-[20px] mr-[15px]">Calculate Your Market Cost</p>
+
+        <div id="box_container"
+            class="sm:w-2xl w-[80%] h-auto border-2 border-[#FFFA8D] mt-[50px] flex  flex-col items-center rounded">
+
+            <div id="show_budget" class="p-4 text-2xl font-poppins"> </div>
+
+            <div id="submit_box" class="flex items-center justify-center"> <input id="budget"
+                    class="font-mono mt-[20px] mb-[20px] w-[200px] h-[30px]  border-2 border-[#FFFA8D] rounded"
+                    type="number" placeholder="what was your budget">
+                <button id="submit_budget"
+                    class="cursor-pointer rounded bg-[#FFFA8D] text-[#27548A] hover:bg-[#ECEFCA] p-1 font-poppins ml-[10px]">ENTER
+                </button>
+
+            </div>
+
+            <button id="Calculate" hidden
+                class="cursor-pointer rounded  bg-[#FFFA8D] text-[#27548A] hover:bg-[#ECEFCA] p-1 font-poppins ml-[10px] mb-[12px] ">Calculate</button>
+
+
+        </div>
+
+
+        <div class="flex items-center justify-around gap-[60px] ">
+            <div> <input id="name" class="  font-poppins mt-[15px] w-[60px] h-[30px]  border-2 border-[#FFFA8D] rounded"
+                    type="text" placeholder="Name">
+            </div>
+            <div> <input id="price" class=" font-poppins mt-[15px] w-[60px] h-[30px]  border-2 border-[#FFFA8D] rounded"
+                    type="number" placeholder="price">
+
+            </div>
+
+            <button id="submit_item"
+                class="cursor-pointer rounded bg-[#FFFA8D] text-[#27548A] hover:bg-[#ECEFCA] p-1.5 font-poppins">Submit
+                items</button>
+        </div>
+    </div>
+    <!-- main container -->
+
+    <script src="/src/script.js"></script>
+</body>
+
+</html>
